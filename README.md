@@ -32,7 +32,6 @@
 - [Quick Start](#-quick-start)
 - [Dataset](#-dataset)
 - [Results](#-results)
-- [Runtime](#-runtime)
 - [Citation](#-citation)
 
 ---
