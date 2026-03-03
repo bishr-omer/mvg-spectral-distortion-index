@@ -192,21 +192,6 @@ Higher SROCC & PLCC and lower RMSE = better. **Bold** = best per row.
 > MVG-SDI leads on 3 out of 4 sensors for CC and SAM. FQNRλ leads on WV-4 but with inconsistent behaviour across other datasets.
 ---
 
-## ⏱️ Runtime
-
-Tested on Intel Core i5-1035G1 @ 1.19 GHz, 16 GB RAM, MATLAB R2024a, on 200 IKONOS images at 1024×1024.
-
-| Metric | Avg. Time (s) | vs. Ours |
-|---|:---:|:---:|
-| MQNRλ | 0.69 | 2.9× faster |
-| QNRλ | 1.11 | 1.8× faster |
-| **MVG-SDI (Ours)** | **2.00** | — |
-| FQNRλ | 3.10 | **~35% slower** |
-
-Overall complexity: **O(N)** — scales linearly with image resolution.
-
----
-
 ## 🙏 Acknowledgements
 
 This work is supported by the Practice and Innovation Funds for Graduate Students of Northwestern Polytechnical University and the Key R&D Program of Shaanxi Province (No. 2025CY-YBXM-079).
