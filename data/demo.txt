@@ -4,8 +4,8 @@
 clear; clc; addpath('..');  % Add matlab/ to path
 
 % Load NBU IKONOS samples (included in /data/)
-MS = double(imread('../data/ikonos_ms.tif'));     % 256x256x4 ref
-Fused = double(imread('../data/ikonos_fused_gs.tif'));  % GS fused
+MS = double(imread('../data/ms.png'));     % 256x256x4 ref
+Fused = double(imread('../data/ifused.png'));  % GS fused
 
 fprintf('MS shape: %dx%dx%d\n', size(MS));
 fprintf('Fused shape: %dx%dx%d\n', size(Fused));
