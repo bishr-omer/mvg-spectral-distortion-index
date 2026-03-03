@@ -190,16 +190,6 @@ Higher SROCC & PLCC and lower RMSE = better. **Bold** = best per row.
 | WV-4 | SAM | FQNRλ | **0.9747** | **0.9968** | **0.0066** |
 
 > MVG-SDI leads on 3 out of 4 sensors for CC and SAM. FQNRλ leads on WV-4 but with inconsistent behaviour across other datasets.
-
-### Stability Under Simulated Spectral Degradations
-
-| Distortion Type | QNRλ | FQNRλ | MQNRλ | **Ours** |
-|---|:---:|:---:|:---:|:---:|
-| Hue shift (monotonic ↑) | ✅ | ✅ | ✅ | ✅ |
-| Saturation shift (no early saturation) | ❌ | ❌ saturates | ❌ saturates | ✅ |
-| Intensity gamma γ > 1 (sensitive) | ❌ flat | ❌ spikes | ⚠️ | ✅ |
-| Intensity gamma γ < 1 (sensitive) | ⚠️ | ✅ | ✅ | ✅ |
-
 ---
 
 ## ⏱️ Runtime
@@ -221,7 +211,7 @@ Overall complexity: **O(N)** — scales linearly with image resolution.
 
 This work is supported by the Practice and Innovation Funds for Graduate Students of Northwestern Polytechnical University and the Key R&D Program of Shaanxi Province (No. 2025CY-YBXM-079).
 
-Fusion algorithm implementations sourced from the [PanCollection](https://github.com/liangjiandeng/PanCollection) and [PolyU-GTC](https://github.com/errors404/pansharpening) MATLAB toolkits.
+Fusion algorithm implementations sourced from the [PanCollection](https://github.com/liangjiandeng/PanCollection) MATLAB toolkits.
 
 ---
 
