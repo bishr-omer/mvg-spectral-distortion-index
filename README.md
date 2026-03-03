@@ -33,3 +33,10 @@ Fused = double(imread('fused_gs.tif')); % Same size
 % Compute MVG-SDI (lower = better spectral fidelity)
 quality = MVG_Spectral(MS, Fused);
 fprintf('MVG-SDI Spectral Distortion: %.4f\n', quality);
+
+## 📊 Performance (NBU Dataset)[file:31]
+| Sensor | PLCC (vs. CC) | SROCC (vs. SAM) | RMSE (vs. SID) |
+|--------|---------------|-----------------|---------------|
+| IKONOS | **0.9719**   | **0.8903**     | **0.0004**   |
+| WV-2   | **0.9594**   | **0.8801**     | 0.0066       |
+
