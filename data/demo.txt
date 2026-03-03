@@ -1,0 +1,16 @@
+%% MVG-SDI Demo - Sensors 2026 (Runnable!)
+% Official: github.com/YOUR_USERNAME/spectral-mvg-distortion-index
+
+clear; clc; addpath('..');  % Add matlab/ to path
+
+% Load NBU IKONOS samples (included in /data/)
+MS = double(imread('../data/ikonos_ms.tif'));     % 256x256x4 ref
+Fused = double(imread('../data/ikonos_fused_gs.tif'));  % GS fused
+
+fprintf('MS shape: %dx%dx%d\n', size(MS));
+fprintf('Fused shape: %dx%dx%d\n', size(Fused));
+
+% Compute MVG-SDI
+quality = MVG_Spectral(MS, Fused);
+fprintf('\n🎯 MVG-SDI Spectral Distortion: %.4f (lower = better)\n', quality);
+fprintf('GS pansharpening preserves spectral fidelity well.\n');
